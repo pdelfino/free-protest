@@ -1,73 +1,56 @@
-Idea
-===
+# Free Protest
 
-In 2013, many protests occured in Brazil. These events are known as
- _2013 Confederations Cup riots_, _Brazilian Sprint_ or _June Journeys_.
+![Liberty Leading the People](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/700px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg)
 
- ![alt text](https://upload.wikimedia.org/wikipedia/commons/4/4b/Protesto_no_Congresso_Nacional_do_Brasil%2C_17_de_junho_de_2013.jpg)
- 
+*"Liberty Leading the People" (1830) by Eugène Delacroix — [Wikipedia](https://en.wikipedia.org/wiki/Liberty_Leading_the_People)*
 
-During this period, many protestants were being illegaly arrested. Some popular attorneys
-were doing preventive _Habeas Corpus_ manually with forms, pen and paper on the streets.
+**A Facebook app that automatically generated preventive Habeas Corpus documents to protect protesters during Brazil's 2013 demonstrations.**
 
-That's when I had an insight. What if people could automatically
-make a preventive _Habeas Corpus_ automatically through a Facebook extension?
+---
 
-That would be more efficient. It would protect more people and it would be legal.
-That's what we did!
+## About
 
+In June 2013, a wave of massive protests swept across Brazil -- events known as the *Jornadas de Junho* (June Journeys), the *Brazilian Spring*, or the *2013 Confederations Cup protests*.
 
-Demo
-===
+![Protests at Brazil's National Congress, June 17, 2013](https://upload.wikimedia.org/wikipedia/commons/4/4b/Protesto_no_Congresso_Nacional_do_Brasil%2C_17_de_junho_de_2013.jpg)
 
-+ [Facebook page](https://www.facebook.com/protestolivrehc/)
+During this period, many protesters were being illegally arrested. Volunteer lawyers were manually filling out preventive *Habeas Corpus* forms with pen and paper on the streets. This project was born from a simple insight: **what if people could automatically generate a legally valid preventive Habeas Corpus through a Facebook app?**
 
-+ [Link To use the Facebook app](https://apps.facebook.com/protestolivre/)
+That is exactly what this team built. The app pulled user data from Facebook (with permission) and generated a proper legal document that could help protect people from unlawful detention.
 
-+ Cool GIFs:
+## How It Worked
 
-<br><br>
-![Alt Text](https://media.giphy.com/media/2wWtRw2iiX0smQKliE/giphy.gif)
+1. User accessed the app through Facebook
+2. The app collected basic personal information (name, ID) with the user's consent
+3. A preventive *Habeas Corpus* PDF was automatically generated and ready for use
 
-<br><br>
-![At text](https://media.giphy.com/media/vc0KnJDB9lpBx4Iz37/giphy.gif)
+## Tech Stack
 
-+ Preventive _Habeas Corpus_: 
-[example of the final output](https://protestolivre.herokuapp.com/prev_gen/habeascorpus.pdf)
+- **Java** -- Android application
+- **Facebook API** -- User authentication and data collection
+- **Android 2.2+** -- Minimum supported version
+- Deployed on Heroku as a Facebook-integrated web app
 
+## Outcome
 
-Failed
-===
-This project was build in 2014, before the World Cup. By that time, we thought
-that in 2014 protests like the ones in 2013 would happen again. However, they didn't happen.
-The Facebook app only got 300 likes and was used just 30 times.
+The project was built in 2014 in anticipation of renewed protests during the World Cup. Unfortunately, the large-scale demonstrations of 2013 did not recur. The Facebook page received around 300 likes and the app was used approximately 30 times. A good idea that missed its window of timing.
 
-I think this was a good idea. But it lost the right _timing_.
+## Demo (Historical)
 
-Authorship
-===
+- [Facebook page](https://www.facebook.com/protestolivrehc/) (may no longer be active)
+- [Facebook app](https://apps.facebook.com/protestolivre/) (may no longer be active)
 
-**Despite having the idea of the project, I am not the responsible for writting 
-this code.** By that time, I was just a hobbyist and knew very little about programming.
+## Team
 
-However, I was the leader of the  team responsible for building this project. Something like the Project Manager or Product Owner. The team had people with design, programming and legal skills.
-I was responsible for submiting the code for the contest
-_Vai Mudar na Copa_ via Github. Hence, the code remained here.
+This was a multidisciplinary team effort, built for the *Vai Mudar na Copa* contest:
 
-The main author of this code is Thiago Cavalcante. His email is: ```thicosc at gmail dot com```.
+- **Pedro Delfino** -- Project lead / Product Owner (conceived the idea and managed the team)
+- **Thiago Cavalcante** -- Lead developer and main author of the code
+- **Italo Ferreira dos Santos** -- Design
+- **Fernanda Almeida Fernandes de Oliveira** -- Legal
+- **Ricardo Carrion** -- Legal
+- **Luan Camargo** -- Legal
 
-Ítalo Ferreira dos Santos was
-resposible for the design, his email is ```oi at italoferreira dot com dot br``` 
+## Language Note
 
-The other members contributed to the legal aspects of the project: 
-
-+ Fernanda Almeida Fernandes de Oliveira ```fernandaafoliveira at gmail dot com```
-+ Ricardo Carrion ```rcarrionalves at gmail dot com```; and,
-+ Luan Camargo ```luan_mateus_camargo at hotmail dot com```.
-
-Requirements
-===
-
-To run this code you need at least Android 2.2.
-It is also necessary to allow installs from unkown fonts.
-
+The application interface and generated legal documents are in Portuguese, as this was built specifically for the Brazilian legal context.
